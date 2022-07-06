@@ -1,5 +1,3 @@
-'use strict';
-
 const sons = {
     'A' : 'boom.wav',
     'S' : 'clap.wav',
@@ -25,7 +23,7 @@ const exibir = function(sons) {
 } 
 
 const som = function(tecla){
-    const audio = new Audio(`../sounds/${sons[tecla]}`);
+    const audio = new Audio(`../sounds/kick.wav`);
     audio.play();
 } 
 
