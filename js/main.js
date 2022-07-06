@@ -23,7 +23,7 @@ const exibir = function(sons) {
 } 
 
 const som = function(tecla){
-    const audio = new Audio(`../sounds/kick.wav`);
+    const audio = new Audio(`../sounds/${sons[tecla]}`);
     audio.play();
 } 
 
@@ -33,7 +33,7 @@ const addEfeito = function(tecla){
 const removeEfeito = function(tecla){
     const div = document.getElementById(tecla);
     const remover = () => div.classList.remove('active');
-    div.addEventListener('transitionend', remover)
+    div.addEventListener('transitionend', remover);
 }
 
 const ativarDiv = function(evento){
@@ -52,4 +52,4 @@ exibir(sons);
 
 document.getElementById('key-container').addEventListener('click', ativarDiv);
 
-window.addEventListener('keydown', ativarDiv)
+window.addEventListener('keydown', ativarDiv);
