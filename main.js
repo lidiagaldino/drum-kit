@@ -23,7 +23,7 @@ const exibir = function(sons) {
 } 
 
 const som = function(tecla){
-    const audio = new Audio(`../sounds/${sons[tecla]}`);
+    const audio = new Audio(`./sounds/${sons[tecla]}`);
     audio.play();
 } 
 
